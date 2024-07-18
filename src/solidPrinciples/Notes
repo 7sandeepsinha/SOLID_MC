@@ -1,0 +1,51 @@
+Open Close principle -
+Open for extension
+Close for modification
+
+Able to add new code blocks, but not update existing code blocks
+
+
+Liskov Substitution Principle -
+
+All features/functionalities available in parent class
+should also be available on child class
+
+
+
+1. Animal  - run()
+2. too many if/else because every animal runs in diff way
+
+3. SRP - Single Responsibility Principle
+4. Abstract class animal, run() -> abstract
+
+5. Add a bird, [ bird is an animal that can fly]
+6. Adding fly() abstract method in animal ?
+7. Breaking OCP, and LSP
+8. IFlyable interface, only those animals/birds that can fly will implement the interface
+
+9. Added Shaktiman, and IFlyable contains fly() and spreadWings()
+10. IFlyable is parent, does it's child Shaktiman, having all the functionalities - violating LSP
+
+I - Interface Segregation Principle
+
+An interface should have as segregated methods as possible[ as minimum methods as possible]
+Ideally, an interface should have only 1 method
+
+ISP -> SRP for Interfaces
+
+IFlyable -> both fly() and spreadWings()
+
+Flamingo, Ostrich -> Can spread wings, but cant fly
+
+
+D - Dependency Inversion Principle
+Change the dependencies without any tight coupling
+
+
+
+SOLID -
+S - SRP
+O - OCP
+L - LSP
+I - ISP
+D - DIP
